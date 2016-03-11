@@ -81,7 +81,7 @@ CC       = gcc
 CXX = g++
 GCC = gcc
 #Insert the optional parameter to the compiler. The CFLAGS could be changed externally by the user
-CFLAGS   = -Wall
+CFLAGS   = -g -O2 -pipe -Wno-pointer-to-int-cast
 
 #Set INCPATH to add the inclusion paths
 # INCPATH = -I ./include -I$(AGILE_CFITSIO_INCLUDE) -I$(ROOTSYS)/include  

@@ -63,7 +63,9 @@ const char *wcs_errmsg[] = {
    "Invalid subimage specification",
    "Non-separable subimage coordinate system"};
 
+#ifndef signbit
 #define signbit(X) ((X) < 0.0 ? 1 : 0)
+#endif
 
 /*--------------------------------------------------------------------------*/
 
